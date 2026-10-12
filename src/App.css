@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #18352e;
+  background: #f7faf8;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.brand {
+  font-size: 27px;
+  font-weight: 800;
+  color: #173d32;
+}
+
+.brand span {
+  color: #20a875;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 28px;
+}
+
+.navbar nav a {
+  color: #354c44;
+  font-weight: 600;
+}
+
+.navbar nav a:hover {
+  color: #20a875;
+}
+
+.nav-button,
+.primary-button {
+  display: inline-block;
+  background: #16865f;
+  color: white;
+  padding: 13px 22px;
+  border-radius: 8px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-button:hover,
+.primary-button:hover {
+  background: #106c4b;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 85px 10%;
+  background: linear-gradient(120deg, #e7f7ed, #f8fcf9);
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.eyebrow {
+  color: #16865f;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 4.5vw, 58px);
+  line-height: 1.12;
+  margin: 18px 0;
+}
+
+.hero h1 span {
+  color: #16865f;
+}
+
+.hero-text {
+  color: #63766d;
+  line-height: 1.8;
+  font-size: 17px;
+  margin-bottom: 28px;
+}
+
+.hero-note {
+  margin-top: 20px;
+  color: #60766b;
+  font-size: 14px;
+}
+
+.hero-card {
+  background: white;
+  min-width: 270px;
+  max-width: 340px;
+  padding: 35px 28px;
+  border-radius: 22px;
+  box-shadow: 0 15px 45px rgba(30, 90, 60, 0.12);
+  text-align: center;
+}
+
+.city-icon {
+  font-size: 70px;
+}
+
+.hero-card h2 {
+  font-size: 23px;
+  line-height: 1.4;
+}
+
+.hero-card p {
+  color: #718078;
+  line-height: 1.8;
+}
+
+.mini-status {
+  background: #e9f8ef;
+  color: #16865f;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #20a875;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 65px 10%;
+}
+
+.features > div {
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  border: 1px solid #e5eee8;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.03);
+}
+
+.feature-icon {
+  font-size: 30px;
+}
+
+.features h3 {
+  margin-top: 18px;
+}
+
+.features p {
+  color: #718078;
+  line-height: 1.7;
+}
+
+.report-section {
+  background: #edf7f0;
+  padding: 70px 20px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-heading h2 {
+  font-size: 34px;
+  margin: 12px 0;
+}
+
+.section-heading > p:last-child {
+  color: #687970;
+}
+
+.complaint-form {
+  max-width: 650px;
+  margin: auto;
+  padding: 35px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+.complaint-form label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.complaint-form input,
+.complaint-form select,
+.complaint-form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 9px;
+  padding: 13px;
+  border: 1px solid #d5e1d9;
+  border-radius: 7px;
+  font: inherit;
+  background: white;
+  color: #18352e;
+}
+
+.complaint-form input:focus,
+.complaint-form select:focus,
+.complaint-form textarea:focus {
+  outline: 2px solid #9cddbb;
+  border-color: #16865f;
+}
+
+.complaint-form textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  width: 100%;
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  padding: 35px 20px;
+  background: #153b30;
+  color: white;
+}
+
+footer .brand {
+  color: white;
+}
+
+footer p {
+  color: #d0e0d7;
+  font-size: 14px;
+}
+
+@media (max-width: 750px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 18px 5%;
+  }
+
+  .navbar nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 55px 7%;
+  }
+
+  .hero-card {
+    max-width: none;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    padding: 40px 7%;
+  }
+
+  .complaint-form {
+    padding: 24px;
+  }
+}
